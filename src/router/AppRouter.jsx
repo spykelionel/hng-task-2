@@ -1,15 +1,12 @@
+import { Layout } from "@components";
 import { Home } from "@pages";
-import { createBrowserRouter, Outlet } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 
 const children = [{ element: <Home />, path: "/" }];
 
 export const router = createBrowserRouter([
   {
-    element: (
-      <>
-        <Outlet></Outlet>
-      </>
-    ),
+    element: <Layout />,
     path: "",
     errorElement: (
       <a href="/" className="text-center">
