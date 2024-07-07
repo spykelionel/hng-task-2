@@ -1,7 +1,7 @@
 export const Header = () => {
   return (
     <div>
-      <p>Header</p>
+      <p className="bg-primary">Header</p>
     </div>
   );
 };

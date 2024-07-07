@@ -6,10 +6,11 @@ export default {
       screens: {
         xs: "500px",
       },
-    },
-    colors: {
-      primary: "#C80001",
-      secondary: "#F08000",
+      colors: {
+        primary: "#C80001",
+        secondary: "#F08000",
+        tertiary: "#D2D3CD",
+      },
     },
   },
   plugins: [],
