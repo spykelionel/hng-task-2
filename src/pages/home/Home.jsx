@@ -7,7 +7,7 @@ export function Home() {
     <div className="">
       <div className={`${bgString} py-2`}>
         <div className="my-">
-          <div className="flex flex-col items-center gap-3 ">
+          <div className="flex flex-col items-center gap-3 text-white sm:text-gray-900 my-2">
             <p className="font-bold text-xl">Shoes</p>
             <p className="">Explore Our range of footwears</p>
           </div>
@@ -66,7 +66,7 @@ export function Home() {
       <div
         className={`flex flex-wrap justify-center items-center bg-center gap-2`}
       >
-        {Array.from({ length: 12 }).map((_, index) => (
+        {Array.from({ length: 8 }).map((_, index) => (
           <Card key={index} />
         ))}
       </div>
