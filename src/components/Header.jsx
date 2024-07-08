@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <>
       <header
-        className={`flex justify-center items-center align-center w-full gap-5 py-5 ${bgString} bg-center m-0 border-b-2 border-secondary border-solid`}
+        className={`flex p-5 justify-between md:justify-center items-center align-center w-full gap-5 py-5 ${bgString} bg-center m-0 border-b-2 border-secondary border-solid`}
       >
         <div className="flex mx-5">
           <a href="#" className="flex space-evenly align-center">
