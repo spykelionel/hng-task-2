@@ -19,10 +19,8 @@ export function Card() {
     </svg>
   );
 
-  const shoeUrl =
-    "https://m.media-amazon.com/images/I/81p5Z19wJtL._AC_SX625_.jpg";
   return (
-    <div className="bg-white w-64 border shadow-md rounded-br-xl rounded-bl-xl m-2 flex flex-col gap-3">
+    <div className="bg-white w-[70%] sm:w-64 border shadow-md rounded-br-xl rounded-bl-xl m-2 flex flex-col gap-3">
       <div className="p-2 rounded-br-xl rounded-bl-xl border bg-tertiary">
         <img src={shoe} alt="Image" className="bg-transparent" />
       </div>
