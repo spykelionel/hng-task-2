@@ -13,7 +13,7 @@ export function Home() {
           </div>
           {/* Filter */}
           <div className="flex justify-evenly items-center">
-            <button className="bg-secondary p-2 flex gap-2 text-white rounded-lg">
+            <button className="bg-secondary hover:bg-yellow-600 p-2 flex gap-2 text-white rounded-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"

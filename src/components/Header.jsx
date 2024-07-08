@@ -67,7 +67,7 @@ export const Header = () => {
               </svg>
             </button>
           </div>
-          <div className="inline-flex gap-2 items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-primary rounded-full border border-primary dark:hover:bg-primary ">
+          <div className="inline-flex gap-2 items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-primary rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -81,7 +81,7 @@ export const Header = () => {
               />
             </svg>
           </div>
-          <div className="inline-flex gap-2 items-center py-3 px-3 ms-2 text-sm font-medium text-white bg-primary rounded-full border border-primary dark:hover:bg-primary ">
+          <div className="inline-flex gap-2 items-center py-3 px-3 ms-2 text-sm font-medium text-white bg-primary rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
