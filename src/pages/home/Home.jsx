@@ -4,7 +4,7 @@ export function Home() {
   return (
     <div className="">
       <div className={`bg-blur py-2`}>
-        <div className="my-">
+        <div className="my-2">
           <div className="flex flex-col items-center gap-3 t sm:text-gray-900 my-2">
             <p className="font-bold text-xl">Shoes</p>
             <p className="">Explore Our range of footwears</p>
@@ -27,14 +27,14 @@ export function Home() {
                   stroke-linecap="round"
                 />
               </svg>
-              <span>Filter</span>
+              <span className="hidden sm:inline">Filter</span>
             </button>
             <div className="hidden sm:w-24"></div>
             <div className="hidden sm:w-24"></div>
             <div className="hidden sm:w-24"></div>
             <div className="hidden sm:w-24"></div>
             <div className="flex items-center gap-1 font-bold text-secondary cursor-pointer">
-              <span>Sort By</span>
+              <span className="hidden sm:inline">Sort By</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="10"
