@@ -1,4 +1,4 @@
-import { Card, CardNoBorder } from "@components";
+import { Button, Card, CardNoBorder } from "@components";
 
 export function Home() {
   const bgString =
@@ -31,10 +31,10 @@ export function Home() {
               </svg>
               <span>Filter</span>
             </button>
-            <div className="w-24"></div>
-            <div className="w-24"></div>
-            <div className="w-24"></div>
-            <div className="w-24"></div>
+            <div className="hidden sm:w-24"></div>
+            <div className="hidden sm:w-24"></div>
+            <div className="hidden sm:w-24"></div>
+            <div className="hidden sm:w-24"></div>
             <div className="flex items-center gap-1 font-bold text-secondary cursor-pointer">
               <span>Sort By</span>
               <svg
@@ -69,6 +69,9 @@ export function Home() {
         {Array.from({ length: 12 }).map((_, index) => (
           <Card key={index} />
         ))}
+      </div>
+      <div className="flex justify-evenly my-2">
+        <Button title={"Load More"} />
       </div>
     </div>
   );
