@@ -1,22 +1,18 @@
-import { Layout } from "@components";
-import { Home } from "@pages";
-import { Cart } from "@pages/cart";
+import { Layout, NotFound } from "@components";
+import { Cart, Checkout, Home } from "@pages";
 import { createBrowserRouter } from "react-router-dom";
 
 const children = [
-  { element: <Home />, path: "/" },
-  { element: <Cart />, path: "/cart" },
+  { element: <Home />, path: "/", errorElement: <NotFound /> },
+  { element: <Cart />, path: "/cart", errorElement: <NotFound /> },
+  { element: <Checkout />, path: "/checkout", errorElement: <NotFound /> },
 ];
 
 export const router = createBrowserRouter([
   {
     element: <Layout />,
     path: "",
-    errorElement: (
-      <a href="/" className="text-center">
-        This page does not exist
-      </a>
-    ),
+    errorElement: <NotFound />,
     children,
   },
 ]);
