@@ -1,11 +1,11 @@
 import { Layout } from "@components";
-import { Home } from "@pages";
-import { Cart } from "@pages/cart";
+import { Cart, Checkout, Home } from "@pages";
 import { createBrowserRouter } from "react-router-dom";
 
 const children = [
   { element: <Home />, path: "/" },
   { element: <Cart />, path: "/cart" },
+  { element: <Checkout />, path: "/checkout" },
 ];
 
 export const router = createBrowserRouter([
