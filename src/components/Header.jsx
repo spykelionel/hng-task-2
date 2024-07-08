@@ -1,19 +1,17 @@
 import { Link } from "react-router-dom";
 
 export const Header = () => {
-  const bgString =
-    "bg-[url(https://s3-alpha-sig.figma.com/img/6407/8abc/4069b8460a6c268b0a05b5b3828424f7?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dF9pqKPR3cOmXMlXsk3b7UcO~UIygqJ5PYmt7hbwsYNQOcO8RomGWiwr0SB-XrH8ib2YeyslEq-V86YqyBpdbPct1K~lFtwPguEPxrFBY6qDBibtUFzPUNgdXUOPvW-8~riQ38INNjOkmeU8ARKVRxHqio0ZQCMWqF92SV7H~HEyS6G2j08Nwbw9lGmiKQbYdoUgDM6mybmRF9WrJPN1iCliFOUsKV0dcgDEe4ukxKchS8fY32WqCuElo68tAYBQSSfunx7CJyWOmFZincGg~tvVuAgv9S17aX594Q0JnQ-OlunuCYXtOQzGZvj~0ADcXEk-hxrf2ZxZqG~4lrSEKQ__)]";
   return (
     <>
       <header
-        className={`flex p-5 justify-between md:justify-center items-center align-center w-full gap-5 py-5 ${bgString} bg-center m-0 border-b-2 border-secondary border-solid`}
+        className={`flex p-5 justify-between md:justify-center items-center align-center w-full gap-5 py-5 bg-blur m-0 `}
       >
         <div className="flex mx-5">
-          <a href="#" className="flex space-evenly align-center">
+          <Link to="/" className="flex space-evenly align-center">
             <h2 className="font-bold text-primary text-2xl text-nowrap">
               Body Shop
             </h2>
-          </a>
+          </Link>
         </div>
 
         <nav className="hidden sm:block mx-4 text-gray-800">
@@ -44,7 +42,7 @@ export const Header = () => {
             <input
               type="text"
               id="text-search"
-              className="bg-transparent border border-white text-gray-900 text-sm rounded-2xl focus:ring-primary focus:border-primary block w-full pe-10 p-2.5 placeholder:text-white"
+              className="bg-transparent border border-primary text-gray-900 text-sm rounded-2xl focus:ring-primary focus:border-primary block w-full pe-10 p-2.5 placeholder:text-primary"
               placeholder="Search Any Cos"
               required
             />
@@ -53,7 +51,7 @@ export const Header = () => {
               className="absolute inset-y-0 end-0 flex items-center pe-3"
             >
               <svg
-                className="w-4 h-4 me-2 text-white font-bold"
+                className="w-4 h-4 me-2 text-primary font-bold"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

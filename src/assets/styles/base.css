@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-blur {
+  background: url("https://s3-alpha-sig.figma.com/img/ddbd/4dcf/5f89b36c8f9ffcab5ca502468510bd0f?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=E~zDI3Opx0uAaCM5jOL8VeXwj3RpiPMWx1vB7qNEDnTH4z7MnoXCvdi-q4LHKcomStoh6-AsZXbIRzjC2~7P6XMGtZFdEMYAmQCjIiYkITU43lOUpGpm0s8h2wbj~9KxMIs~6pHbMFBazSkH4MGOaYlEb3LjESjcXceWpMlwOi5aPk9A3tiDbcfDpitE9gXu4a1wrZfBxbRaVB3Z7tABzp7pyGTqsIQcwTLoT4JXUaO434YBna1cb5GXFw-m5AU9ONrtn-OXyvWJH2YNrQFU0GGEWjhgySK3n~EXH3HcG4mQ6OELBK-girlh-9WYdR60LHg7mo2t6h~EyXp8DcdEHg__")
+    rgba(193, 193, 207, 0.85) center/cover no-repeat;
+  backdrop-filter: blur(100px);
+  background-blend-mode: color;
+}
