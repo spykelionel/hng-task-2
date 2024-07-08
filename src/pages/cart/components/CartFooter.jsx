@@ -30,6 +30,7 @@ export const CartFooter = () => {
         <Button
           title={"Proceed to checkout"}
           onLClick={(_) => navigate("/checkout")}
+          lg
         />
       </div>
     </div>
