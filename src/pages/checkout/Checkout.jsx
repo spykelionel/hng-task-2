@@ -1,18 +1,18 @@
+import { Button } from "@components";
 import { Link } from "react-router-dom";
 
 export function Checkout() {
   return (
     <div className="p-10">
-      <p className="font-bold text-lg">Checkout</p>
-
-      <div className="flex justify-between items-center">
+      <p className="font-bold text-lg my-2 flex p-2">Checkout</p>
+      <div className="flex flex-col-reverse md:flex-row justify-between md:items-center gap-4">
         {/* Shipping info */}
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 p-2">
           {/* Address */}
-          <div className="flex flex-col">
+          <div className="flex flex-col my-2">
             <p className="font-bold border-b border-solid">Shipping Address</p>
-            <div className="flex justify-between">
-              <p>
+            <div className="flex justify-between my-2">
+              <p className="text-wrap w-1/2">
                 10, Gbeleyi Street, off Pipeline bus- stop, Lagos State, Nigeria
               </p>
               <Link className="text-secondary" to="">
@@ -22,9 +22,9 @@ export function Checkout() {
           </div>
 
           {/* Method */}
-          <div className="flex flex-col">
+          <div className="flex flex-col my-2">
             <p className="font-bold border-b border-solid">Shipping Method</p>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 my-2">
               <div className="flex gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -57,17 +57,81 @@ export function Checkout() {
               </div>
             </div>
           </div>
+
+          {/* Payment Details */}
+          <div className="flex flex-col my-2">
+            <p className="font-bold border-b border-solid">Payment Details</p>
+            <div className="flex flex-col my-2">
+              <label htmlFor="name" className="my-2">
+                Name of Card
+              </label>
+              <input
+                type="text"
+                id="name"
+                className="bg-transparent border border-gray-400 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full pe-10 p-2.5"
+                placeholder="Name of Card"
+                required
+              />
+            </div>
+            <div className="flex flex-col my-2">
+              <label htmlFor="number" className="my-2">
+                Card Number
+              </label>
+              <input
+                type="text"
+                id="name"
+                className="bg-transparent border border-gray-400 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full pe-10 p-2.5"
+                placeholder="Card Number"
+                required
+              />
+            </div>
+            <div className="flex justify-between gap-3">
+              <div className="flex flex-col my-2">
+                <label htmlFor="expiry-date" className="my-2">
+                  Expiry Date
+                </label>
+                <input
+                  type="text"
+                  id="expiry-date"
+                  className="bg-transparent border border-gray-400 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full pe-10 p-2.5"
+                  placeholder="Expiry Date"
+                  required
+                />
+              </div>
+              <div className="flex flex-col my-2">
+                <label htmlFor="cvv" className="my-2">
+                  CVV
+                </label>
+                <input
+                  type="text"
+                  id="cvv"
+                  className="bg-transparent border border-gray-400 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full pe-10 p-2.5"
+                  placeholder="CVV"
+                  required
+                />
+              </div>
+            </div>
+            <Button title={"Continue"} lg />
+          </div>
         </div>
-        <div className="flex justify-end my-2 border border-solid ">
+        <div className="flex my-2 border border-solid w-1/2 p-2">
           <div className="flex flex-col">
-            <div className="flex flex-col border-b-2 border-solid border-black my-2">
+            <div className="flex flex-col gap-4 border-b-2 border-solid border-gray-300 my-2 py-2">
               <div className="flex gap-5 justify-between">
-                <p>Sub Total</p>
+                <p>Price</p>
                 <p>N 40, 000</p>
               </div>
-              <div className="flex justify-between">
+              <div className="flex gap-5 justify-between">
+                <p>Discount</p>
+                <p>N 0.00</p>
+              </div>
+              <div className="flex gap-5 justify-between">
                 <p>V.A.T</p>
                 <p>N 0.00</p>
+              </div>
+              <div className="flex gap-5 justify-between">
+                <p>Shipping</p>
+                <p className="text-secondary">free</p>
               </div>
             </div>
             <div className="flex gap-5 justify-between">
