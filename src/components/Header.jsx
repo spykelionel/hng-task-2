@@ -8,11 +8,13 @@ export const Header = () => {
       >
         <div className="flex mx-5">
           <a href="#" className="flex space-evenly align-center">
-            <h2 className="font-bold text-primary text-2xl">Body Shop</h2>
+            <h2 className="font-bold text-primary text-2xl text-nowrap">
+              Body Shop
+            </h2>
           </a>
         </div>
 
-        <nav className="mx-4 text-gray-800">
+        <nav className="hidden sm:block mx-4 text-gray-800">
           <ul className="flex justify-between gap-4">
             <li className="">
               <a href="#">Home</a>
@@ -36,7 +38,7 @@ export const Header = () => {
           </ul>
         </nav>
         <div className="flex items-center mx">
-          <div className="relative w-full">
+          <div className="hidden md:block relative w-full">
             <input
               type="text"
               id="text-search"
