@@ -27,7 +27,7 @@ export const Header = () => {
   return (
     <div className="p-5 bg-blur m-0 py-5">
       <header
-        className={`flex justify-between md:justify-center items-center align-center w-full gap-5`}
+        className={`flex justify-between md:justify-center items-center align-center w-full gap-5 border-b-2 border-primary border-solid pb-2`}
       >
         <div className="flex mx-5">
           <Link to="/" className="flex space-evenly align-center">
