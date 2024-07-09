@@ -1,4 +1,5 @@
-import { Button, Card, CardNoBorder } from "@components";
+import { Card, CardNoBorder } from "@components";
+import { Link } from "react-router-dom";
 
 export function Home() {
   return (
@@ -69,7 +70,9 @@ export function Home() {
         ))}
       </div>
       <div className="flex justify-evenly my-2">
-        <Button title={"Load More"} />
+        <Link to={"/"} className="text-secondary">
+          Load More
+        </Link>
       </div>
     </div>
   );
