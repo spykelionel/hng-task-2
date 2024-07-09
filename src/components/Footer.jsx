@@ -119,14 +119,19 @@ export const Footer = () => {
             <p>Enter your email to get updates.</p>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap">
             <input
               type="text"
               id="text-search"
-              className="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border placeholder:text-sm border-solid border-white pe-10 p-2.5 "
+              className="block w-2/4 text-sm text-gray-900 bg-gray-50 border placeholder:text-sm border-solid border-white p-2.5 rounded-l-md"
               placeholder="Email."
               required
             />
+            <button
+              className={`p-3 bg-secondary hover:bg-yellow-600 text-white text-sm rounded-r-md`}
+            >
+              Subscribe
+            </button>
           </div>
         </div>
       </div>
