@@ -4,20 +4,83 @@ import { Link } from "react-router-dom";
 export function Checkout() {
   return (
     <div className="p-10">
-      <p className="font-bold text-lg my-2 flex p-2">Checkout</p>
+      <div className="flex justify-between items-center my-5">
+        <Link to={"/cart"}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+          >
+            <path
+              d="M8.75 18.75H33.75C34.0815 18.75 34.3995 18.8817 34.6339 19.1161C34.8683 19.3505 35 19.6685 35 20C35 20.3315 34.8683 20.6495 34.6339 20.8839C34.3995 21.1183 34.0815 21.25 33.75 21.25H8.75C8.41848 21.25 8.10054 21.1183 7.86612 20.8839C7.6317 20.6495 7.5 20.3315 7.5 20C7.5 19.6685 7.6317 19.3505 7.86612 19.1161C8.10054 18.8817 8.41848 18.75 8.75 18.75Z"
+              fill="black"
+            />
+            <path
+              d="M9.26729 19.9996L19.6348 30.3646C19.8695 30.5993 20.0014 30.9177 20.0014 31.2496C20.0014 31.5816 19.8695 31.8999 19.6348 32.1346C19.4001 32.3693 19.0817 32.5012 18.7498 32.5012C18.4179 32.5012 18.0995 32.3693 17.8648 32.1346L6.61479 20.8846C6.49838 20.7685 6.40603 20.6306 6.34301 20.4787C6.28 20.3268 6.24756 20.164 6.24756 19.9996C6.24756 19.8352 6.28 19.6724 6.34301 19.5205C6.40603 19.3687 6.49838 19.2307 6.61479 19.1146L17.8648 7.86463C18.0995 7.62991 18.4179 7.49805 18.7498 7.49805C19.0817 7.49805 19.4001 7.62991 19.6348 7.86463C19.8695 8.09934 20.0014 8.41769 20.0014 8.74963C20.0014 9.08157 19.8695 9.39991 19.6348 9.63463L9.26729 19.9996Z"
+              fill="black"
+            />
+          </svg>
+        </Link>
+        <h1 className="font-bold text-lg">Checkout</h1>
+        <div className="w-2"></div>
+      </div>
       <div className="flex flex-col-reverse md:flex-row justify-between md:items-center gap-4">
         {/* Shipping info */}
         <div className="flex flex-col gap-2 p-2">
           {/* Address */}
           <div className="flex flex-col my-2">
-            <p className="font-bold border-b border-solid">Shipping Address</p>
-            <div className="flex justify-between my-2">
-              <p className="text-wrap w-1/2">
-                10, Gbeleyi Street, off Pipeline bus- stop, Lagos State, Nigeria
-              </p>
-              <Link className="text-secondary" to="">
-                Edit
-              </Link>
+            <p className="font-bold border-b border-solid">Payment Details</p>
+            <div className="flex flex-col my-2">
+              <label htmlFor="name" className="my-2">
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                className="bg-transparent border border-gray-400 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full pe-10 p-2.5"
+                placeholder="Name "
+                required
+              />
+            </div>
+            <div className="flex flex-col my-2">
+              <label htmlFor="number" className="my-2">
+                Phone Number
+              </label>
+              <input
+                type="text"
+                id="number"
+                className="bg-transparent border border-gray-400 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full pe-10 p-2.5"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+            <div className="flex justify-between gap-3">
+              <div className="flex flex-col my-2">
+                <label htmlFor="Email" className="my-2">
+                  Email
+                </label>
+                <input
+                  type="text"
+                  id="Email"
+                  className="bg-transparent border border-gray-400 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full pe-10 p-2.5"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div className="flex flex-col my-2">
+                <label htmlFor="address" className="my-2">
+                  Address
+                </label>
+                <input
+                  type="text"
+                  id="address"
+                  className="bg-transparent border border-gray-400 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-full pe-10 p-2.5"
+                  placeholder="address"
+                  required
+                />
+              </div>
             </div>
           </div>
 
