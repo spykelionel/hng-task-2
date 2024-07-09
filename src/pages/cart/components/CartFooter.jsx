@@ -1,4 +1,3 @@
-import { Button } from "@components";
 import { Link, useNavigate } from "react-router-dom";
 
 export const CartFooter = () => {
@@ -27,11 +26,12 @@ export const CartFooter = () => {
         <Link to={"/"} className="p-2 text-secondary">
           Continue Shopping
         </Link>
-        <Button
-          title={"Proceed to checkout"}
-          onLClick={(_) => navigate("/checkout")}
-          lg
-        />
+        <Link
+          to={"/checkout"}
+          className="text-white bg-secondary p-3 rounded-lg"
+        >
+          Proceed to checkout
+        </Link>
       </div>
     </div>
   );
