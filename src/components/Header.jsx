@@ -25,7 +25,7 @@ export const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="p-5 bg-blur m-0 py-5">
+    <div className="bg-blur m-0 pt-5">
       <header
         className={`flex justify-between md:justify-center items-center align-center w-full gap-5 border-b-2 border-primary border-solid pb-2`}
       >
