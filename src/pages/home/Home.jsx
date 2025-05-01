@@ -1,5 +1,4 @@
-import { Card, CardNoBorder } from "@components";
-import { Link } from "react-router-dom";
+import { CardNoBorder } from "@components";
 
 export function Home() {
   return (
@@ -7,8 +6,12 @@ export function Home() {
       <div className={`bg-blur py-2`}>
         <div className="my-2">
           <div className="flex flex-col items-center gap-3 t sm:text-gray-900 my-2">
-            <p className="font-bold text-xl">Shoes</p>
-            <p className="">Explore Our range of footwears</p>
+            <p className="font-bold text-xl">
+              Shoes Shop. The best place to buy shoes.
+            </p>
+            <p className="text-sm text-gray-700">
+              Explore Our range of footwears
+            </p>
           </div>
           {/* Filter */}
           <div className="flex justify-evenly items-center">
@@ -56,23 +59,10 @@ export function Home() {
         <div
           className={`flex flex-wrap justify-center items-center bg-center gap-2`}
         >
-          {Array.from({ length: 12 }).map((_, index) => (
+          {Array.from({ length: 5 }).map((_, index) => (
             <CardNoBorder key={index} />
           ))}
         </div>
-      </div>
-      {/* Second and last section with no bg-image */}
-      <div
-        className={`flex flex-wrap justify-center items-center bg-center gap-2`}
-      >
-        {Array.from({ length: 8 }).map((_, index) => (
-          <Card key={index} />
-        ))}
-      </div>
-      <div className="flex justify-evenly my-2">
-        <Link to={"/"} className="text-secondary">
-          Load More
-        </Link>
       </div>
     </div>
   );
