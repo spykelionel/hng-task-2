@@ -7,7 +7,9 @@ export function Home() {
         <div className="my-2">
           <div className="flex flex-col items-center gap-3 t sm:text-gray-900 my-2">
             <p className="font-bold text-xl">
-              Shoes Shop. The best place to buy shoes.
+              <strong className="font-extrabold text-2xl">Shoes Shop.</strong>
+              <br />
+              The best place to buy shoes.
             </p>
             <p className="text-sm text-gray-700">
               Explore Our range of footwears
