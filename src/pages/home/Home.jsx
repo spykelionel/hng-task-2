@@ -7,7 +7,9 @@ export function Home() {
         <div className="my-2">
           <div className="flex flex-col items-center gap-3 t sm:text-gray-900 my-2">
             <p className="font-bold text-xl">
-              <strong className="font-extrabold text-2xl">Shoes Shop.</strong>
+              <strong className="font-extrabold text-2xl text-center text-yellow-700">
+                Shoes Shop
+              </strong>
               <br />
               The best place to buy shoes.
             </p>
